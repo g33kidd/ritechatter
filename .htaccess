@@ -1,0 +1,24 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# main pages for the application
+RewriteRule ^api/(.*) api/index.php?request=$1
+RewriteRule ^chat/(.*) chat.php?chat=$1
+RewriteRule ^manage/(.*) manager.php?page=$1
+RewriteRule ^schedule/(.*) schedule.php?chat=$1
+RewriteRule ^search/(.*) search.php?q=$1
+RewriteRule ^register/(.*) twit_auth.php?t=register
+RewriteRule ^login/(.*) twit_auth.php
+RewriteRule ^logout/(.*) twit_auth.php?t=logout
+RewriteRule ^authin/(.*) twit_auth.php?t=authin
+
+# just some pages with simple routes
+RewriteRule ^about about.html
+RewriteRule ^contact contact.html
+RewriteRule ^team team.html
+RewriteRule ^terms terms.html

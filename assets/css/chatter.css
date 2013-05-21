@@ -1,0 +1,61 @@
+/* Here, set everything to fill the entire page... */
+html { height:100%; }
+body { height:100%; }
+.main-page, .main-container { height:100%; }
+.left-section, .middle-section, .right-section { height:100%; }
+.clear { clear:both; }
+
+body { background-color:rgba(132,208,222,1); }
+
+.nav { text-align:center; }
+.nav .item { font-size:20px; padding:10px 5px; }
+.search .searchbox { width:80%; margin-left:5%; margin-right:5%; display:inline-block; }
+
+.tweets { height:100%; width:100%; overflow-y:auto; overflow-x: hidden; }
+
+.tweets .tweetbox { width:100%; border-radius:0; margin-bottom:3px; background-color:rgba(250,250,250,1); }
+.tweets .tweetbox .padding { padding:5px 10px; }
+.tweets .tweetbox .textarea { resize:none; width:100%; border-radius:0; padding:0; outline:none; }
+
+.tweets .tweet { float:left; width:100%; background-color:rgba(187,225,244,0.7); margin-bottom:5px; 
+-webkit-box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.69);
+-moz-box-shadow:    0px 0px 2px rgba(50, 50, 50, 0.69);
+box-shadow:         0px 0px 2px rgba(50, 50, 50, 0.69); }
+.tweets .tweet:hover { cursor:pointer; }
+.tweets .tweet .padding { padding:5px 5px; }
+.tweet .top { margin-bottom:5px; }
+.tweet .top .profile-img { height:100%; float:left; margin-bottom:5px; }
+.tweet .top .content { margin-left:55px; }
+.tweet .top .content .twitter-handle { margin-bottom:8px; }
+.tweet .top .content .twitter-tweet { margin-left:0px; }
+.tweet .bottom { background-color:rgba(187,225,224,0.8); }
+.tweet .bottom .action-buttons .action-btn { float:left; padding:5px 5px; }
+
+.middle-section { background-color:rgba(250,250,250,0.5); }
+.middle-section .padding { padding:5px 10px; }
+
+/* Things on the rite side of the page... */
+.modules .module .padding { padding:5px 15px; }
+.module .header { border-bottom:2px solid rgba(0,0,0,0.4); text-align:center; }
+
+.chat-page-actions { background-color:rgba(127,134,137,1); }
+.chat-page-actions .chat-page-action-btn { float:left; padding:5px 10px; }
+.chat-page-action-btn:hover { color:#fff; cursor:pointer; background-color:; }
+
+.act-btn { color:rgba(102,90,74,0.8); transition:all 300ms ease; -moz-transition:all 300ms ease; }
+.act-btn:hover { color:rgba(190,180,159,0.8); cursor:pointer; }
+
+.chat-page-stats { background-color:rgba(127,134,137,0.7); }
+.chat-page-stats .stats-small { width:50%; padding:5px 0px; float:left; font-size:18px; text-align:center; }
+
+.box {
+    -moz-box-shadow:
+        inset 5px 0 15px -10px #333,
+        inset -5px 0 15px -10px #333;
+    -webkit-box-shadow:
+        inset 5px 0 15px -10px #333,
+        inset -5px 0 15px -10px #333;
+    box-shadow:
+        inset 5px 0 15px -7px #333,
+        inset -5px 0 15px -7px #333;
+}

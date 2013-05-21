@@ -1,0 +1,51 @@
+html, body { min-height:100%; height:100%; }
+
+.container { height:100%; }
+
+.hide { display:none; }
+
+.full-ui { height:100%; min-height:100%; }
+.full-ui .ui-section { min-height:100%; height:100%; overflow:hidden; overflow-x:hidden; overflow-y:auto; }
+
+.tweetbox { position:relative; }
+.tweetbox .count { position:absolute; right:5px; bottom:18px; }
+.tweetbox textarea { resize:none; height:55px; border-bottom-left-radius:0; border:0; border-radius:0; }
+.tweetbox button { border-top-left-radius:0; border-radius:0; }
+
+.options { margin-bottom:30px; }
+.options .ui-option a, .options .ui-option button { border-radius:0; }
+
+.tweet { margin:0; padding:0; }
+.tweets .callout { margin:0; border-radius:0; padding:5px 3px; }
+
+._1 { background-color: #EED2EE; color: #f56991 }
+._2 { background-color: #7AC5CD; color: #d9eef0 }
+._3 { background-color: #528B8B; color: #80b4b4 }
+._4 { background-color: #1874CD; color: #dce7fb}
+._5 { background-color: #B22222; color: #e88888 }
+._6 { background-color: #F0E68C }
+._7 { background-color: #ADD8E6 }
+._8 { background-color: #FFAEB9 }
+._9 { background-color: #66CDAA }
+._10 { background-color: #EE8262 }
+ 	  
+._1 a { color: #a23da2 }
+._2 a { color: #2c6f76 }
+._3 a { color: #312341 }
+._4 a { color: #0c3a66}
+._5 a { color: #591010 }
+._6 a { color: #808000 }
+._7 a { color: #2f809a }
+._8 a { color: #d6001d }
+._9 a { color: #257359 }
+._10 a { color: #972f10 }
+
+.ops_feed, .ops_feed a { padding-top: 14px; margin-bottom: 4px; color: #0c3a66; margin-left: 10px; font-weight: bold; } /* Applies text style to feed controls, regardless of element type */
+.ops_feed span { margin-left: 10px; } /* simple spacing between controls */
+.ops_feed a:hover { color: #0c3a11; text-decoration: underline; }
+
+.tweet_ops_container { /*float: right; */ /*position: absolute;*/ bottom: 2px; right: 0; /*margin-top: -17px; margin-right: -10px;*/ width: 175px; background: rgba(20, 20, 20, .05); padding: 7px 10px; font-size: 75%; }
+.tweet_ops.fav, .tweet_ops.rt, .tweet_ops.reply, .tweet_ops span, .tweet_ops a { color: rgba(0, 0, 0, .8); font-weight: bold; margin-left: 5px; }
+.tweet_ops.fav {}
+.tweet_ops.rt {}
+.tweet_ops.reply {}

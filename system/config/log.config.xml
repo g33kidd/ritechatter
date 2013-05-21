@@ -1,0 +1,11 @@
+<configuration xmlns="http://logging.apache.org/log4php/">
+    <appender name="default" class="LoggerAppenderPDO">
+        <param name="dsn" value="mysql:host=ritechatter.com;dbname=ritechat_logs" />
+        <param name="user" value="ritechat" />
+        <param name="password" value="JoshuaK123!" />
+        <param name="table" value="logs" />
+    </appender>
+    <root>
+        <appender_ref ref="default" />
+    </root>
+</configuration>
